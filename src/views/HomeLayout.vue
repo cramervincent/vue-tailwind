@@ -9,21 +9,18 @@
     </div>
   </div>
   <header>
-    <div class="menu" @click="toggleMenu">
-      <div class="container">
-        <ul>
-          <li>menu item 1</li>
-          <li>menu item 2</li>
-          <li>menu item 3</li>
-          <li>menu item 4</li>
-          <li>menu item 5</li>
-        </ul>
-      </div>
+    <div class="menu">
+      
+        <navigation-menu />
+     
     </div>
     <div class="navbar">
-      <div class="menu-toggle" @click="toggleMenu"><i class="las la-bars"></i></div>
       <div class="logo">LOGO</div>
+      <div class="favorites"><i class="las la-bookmark"></i></div>
       <div class="shopping_basket"><i class="las la-shopping-basket"></i></div>
+      <div class="menu-toggle" @click="toggleMenu">
+        <i class="las la-bars"></i>
+      </div>
     </div>
   </header>
   <main><router-view /></main>
@@ -31,14 +28,14 @@
 </template>
 
 <script>
+import navigationMenu from "../components/navigationMenu.vue";
 export default {
-    methods:{
-        toggleMenu(){
-            let menu = document.querySelector('.menu')
-            menu.classList.toggle('show');
-            }
-
-        }
-    }
-
+  components: { navigationMenu },
+  methods: {
+    toggleMenu() {
+      let menu = document.querySelector(".menu");
+      menu.classList.toggle("show");
+    },
+  },
+};
 </script>

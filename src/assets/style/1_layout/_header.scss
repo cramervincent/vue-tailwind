@@ -11,40 +11,82 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
     > div {
       display: flex;
-      justify-content: center;
       align-items: center;
       height: 100%;
+      padding: 0.5rem;
     }
   }
 
   .menu {
     display: block;
-    width: 50vw;
-    height: 100vh;
+    width: 60vw;
+    height: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
-    left: -51vw;
+    right: -65vw;
     transition: 0.25s ease-in;
     background-color: $white;
     box-shadow: $shadow;
     &.show {
-      left: 0;
+      right: 0;
       transition: 0.25d ease-in;
+    }
+    .close-nav i {
+      font-weight: 900;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      aspect-ratio: 1/1;
+      border: 1px solid $red;
+      color: $white;
+      background-color: $red;
+    
+    }
+    .nav-menu {
+      .nav-item {
+        display: block;
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+          content: "\f1f6";
+           font-family: 'Line Awesome Free';
+          height: 100%;
+          aspect-ratio: 1/1;
+        }
+        a.nav-link {
+          height: 100%;
+          text-decoration: none;
+          color: $red;
+          font-weight: 600;
+          font-size: small;
+          font-family: $font-primary;
+        }
+      }
     }
   }
   .menu-toggle,
-  .shopping_basket {
+  .shopping_basket,
+  .favorites {
     max-width: 3rem;
   }
   .logo {
     flex: auto;
+    justify-content: flex-start;
   }
-
 }
-.shopping_basket i, .menu-toggle i{
+.shopping_basket i,
+.menu-toggle i,
+.favorites i {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
