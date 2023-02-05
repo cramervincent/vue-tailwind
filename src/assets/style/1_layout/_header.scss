@@ -42,8 +42,14 @@ header {
   .logo {
     flex: auto;
   }
-}
 
+}
+.shopping_basket i, .menu-toggle i{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .info-bar {
   background-color: $red;
   color: $white;

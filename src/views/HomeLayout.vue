@@ -21,9 +21,9 @@
       </div>
     </div>
     <div class="navbar">
-      <div class="menu-toggle" @click="toggleMenu">|||</div>
+      <div class="menu-toggle" @click="toggleMenu"><i class="las la-bars"></i></div>
       <div class="logo">LOGO</div>
-      <div class="shopping_basket">B</div>
+      <div class="shopping_basket"><i class="las la-shopping-basket"></i></div>
     </div>
   </header>
   <main><router-view /></main>
