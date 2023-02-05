@@ -1,0 +1,24 @@
+#app {
+  display: unset;
+}
+* {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: $font-primary;
+}
+
+h6,h5,h4,h3,h2,h1{
+    font-family: $font-secondary;
+}
+
