@@ -1,12 +1,12 @@
 main {
-  height: 100vh;
+  min-height: 100vh;
   flex: auto;
   background-color: $white;
   display: flex;
   flex-flow: column;
   
   align-items: flex-start;
-  padding:2vh 1vw;
+  
   @media (min-width: 600px) {
     .container {
       width: 70%;
@@ -16,4 +16,5 @@ main {
 
 .brand-logo{
   padding:0.25rem;
+  border-radius: $rounded;
 }

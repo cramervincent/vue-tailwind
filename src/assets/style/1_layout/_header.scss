@@ -1,11 +1,11 @@
 header {
   height: 50px;
-  position: fixed;
   z-index: 1000;
   top: 0;
   background-color: $white;
   box-shadow: $shadow;
   border-radius: $rounded;
+  position: sticky;
   .navbar {
     display: flex;
     flex-flow: row nowrap;
@@ -44,27 +44,6 @@ header {
   align-items: center;
 }
 
-.info-bar {
-  background-color: $primary;
-  color: $white;
-  height: 2.5rem;
-
-  ul.usp {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    li {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: $font-secondary;
-      font-size: 0.8rem;
-    }
-  }
- 
-}
 
 .menu {
   display: block;

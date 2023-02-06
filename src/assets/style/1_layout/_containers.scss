@@ -1,18 +1,27 @@
 .container{
-    margin:0;
-    padding:0.5rem;
+    margin:2vh 0;
+    padding:1rem;
     width: 100%;
-    .title{
-        font-weight: 600;
-        font-family: $font-secondary;
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
 }
 
 .container-fluid{
-    margin:0;
+    margin:0.1rem 0;
     padding:0;
     width:100vw;
+    &.spp{
+        margin-top: 0;
+    }
 }
 
+.usps{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.title{
+    font-weight: 600;
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}

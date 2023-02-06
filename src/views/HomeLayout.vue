@@ -1,16 +1,7 @@
 <template>
-  <div class="info-bar">
-    <div class="container">
-      <ul class="usp">
-        <li>Duitse prijzen</li>
-        <li>A kwaliteit</li>
-        <li>Snelle levering</li>
-      </ul>
-    </div>
-  </div>
   <header>
     <div class="navbar">
-      <div class="logo">Billiger Bazare</div>
+      <div class="logo">SHOP NAME</div>
       <div class="favorites"><i class="las la-bookmark"></i></div>
       <div class="shopping_basket"><i class="las la-shopping-basket"></i></div>
       <div class="menu-toggle" @click="toggleMenu">

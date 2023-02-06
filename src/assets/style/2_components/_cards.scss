@@ -1,6 +1,6 @@
 .product-card {
   z-index: 900;
-  background-color: $grey-light;
+  background-color: #fff;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -12,6 +12,9 @@
   .product-image {
     position: relative;
     z-index: 900;
+    img{
+      border-radius: $rounded;
+    }
     .discount-banner {
       position: absolute;
       top: 0;
@@ -97,3 +100,5 @@
     
   }
 }
+
+

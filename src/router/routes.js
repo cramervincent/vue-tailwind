@@ -8,7 +8,8 @@ const routes =  [
         name: "MainLayout",
         component: () => import('../views/HomeLayout.vue'),
         children:[
-          {path:'', name:'home', component:() => import('../pages/HomePage.vue')}
+          {path:'', name:'home', component:() => import('../pages/HomePage.vue')},
+          {path:'product/:id', name:'product', component:() => import('../pages/SingleProductPage.vue'), props:true}
         ]
     }
 ]

@@ -1,0 +1,18 @@
+.product-title{
+    font-size: x-large;
+    font-family: $font-secondary;
+}
+.product-brand{
+    font-weight: 200;
+}
+.product-new-price{
+    font-weight: 600;
+    font-size: large;
+    color: $primary;
+    margin-top:0.5rem;
+}
+.product-old-price{
+    font-weight:300;
+    font-size: small;
+    color:$primary;
+}

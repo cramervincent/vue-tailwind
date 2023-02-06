@@ -1,8 +1,9 @@
 <template>
-  <div class="product-card">
+  <div class="product-card" @click="$router.push({name:'product', params:{id:pid}})">
     <div class="product-image">
+      
       <span class="discount-banner">Aanbieding</span>
-      <img src="https://picsum.photos/id/1068/600/400" alt="" />
+      <img :src="'https://picsum.photos/seed/' + img +'/600/400'" alt="" />
       <div class="product-actions">
         <span class="add-to-favorites"></span>
         <span class="add-to-cart"></span>
@@ -19,5 +20,7 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:['img', 'pid']
+};
 </script>
