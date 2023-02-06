@@ -46,7 +46,6 @@ header {
       border: 1px solid $red;
       color: $white;
       background-color: $red;
-    
     }
     .nav-menu {
       .nav-item {
@@ -58,10 +57,11 @@ header {
         justify-content: space-between;
         align-items: center;
         &::after {
-          content: "\f1f6";
-           font-family: 'Line Awesome Free';
+          content: "\f001";
+          font-family: "Line Awesome Free";
           height: 100%;
           aspect-ratio: 1/1;
+          color:black;
         }
         a.nav-link {
           height: 100%;
