@@ -21,63 +21,7 @@ header {
     }
   }
 
-  .menu {
-    display: block;
-    width: 60vw;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: -65vw;
-    transition: 0.25s ease-in;
-    background-color: $grey-light;
-    box-shadow: $shadow;
-    &.show {
-      right: 0;
-      transition: 0.25d ease-in;
-    }
-    .close-nav i {
-      font-weight: 900;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
-      color: $primary;
-      
-    }
-    .nav-menu {
-      margin-top:1rem;
-      .nav-item {
-        display: block;
-        width: 100%;
-        margin: 0 0 0.5rem 0;
-        padding: 0.5rem;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        &::after {
-          content: "\f105";
-           font-family: $font-awesome;
-           font-weight:900;
-          height: 100%;
-          aspect-ratio: 1/1;
-          color:black;
-        }
-        i{
-          max-width:1rem;
-          margin-right:1rem;
-        }
-        a.nav-link {
-          height: 100%;
-          text-decoration: none;
-          
-          color: $primary;
-          font-weight: 600;
-          font-size: small;
-          font-family: $font-primary;
-        }
-      }
-    }
-  }
+  
   .menu-toggle,
   .shopping_basket,
   .favorites {
@@ -120,4 +64,63 @@ header {
     }
   }
  
+}
+
+.menu {
+  display: block;
+  width: 90vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -105vw;
+  transition: 0.25s ease-in;
+  background-color: $grey-light;
+  box-shadow: $shadow;
+  z-index:990;
+  &.show {
+    right: 0;
+    transition: 0.25d ease-in;
+  }
+  .close-nav i {
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    color: $primary;
+    
+  }
+  .nav-menu {
+    margin-top:1rem;
+    .nav-item {
+      display: block;
+      width: 100%;
+      margin: 0 0 0.5rem 0;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &::after {
+        content: "\f105";
+         font-family: $font-awesome;
+         font-weight:900;
+        height: 100%;
+        aspect-ratio: 1/1;
+        color:black;
+      }
+      i{
+        max-width:1rem;
+        margin-right:1rem;
+      }
+      a.nav-link {
+        height: 100%;
+        text-decoration: none;
+        
+        color: $primary;
+        font-weight: 600;
+        font-size: small;
+        font-family: $font-primary;
+      }
+    }
+  }
 }

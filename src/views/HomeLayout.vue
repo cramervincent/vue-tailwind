@@ -9,11 +9,6 @@
     </div>
   </div>
   <header>
-    <div class="menu">
-      
-        <navigation-menu />
-     
-    </div>
     <div class="navbar">
       <div class="logo">Billiger Bazare</div>
       <div class="favorites"><i class="las la-bookmark"></i></div>
@@ -23,6 +18,11 @@
       </div>
     </div>
   </header>
+  <div class="menu">
+      
+      <navigation-menu />
+   
+  </div>
   <main><router-view /></main>
   <footer>footer</footer>
 </template>
