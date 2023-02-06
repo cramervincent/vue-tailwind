@@ -15,7 +15,7 @@
      
     </div>
     <div class="navbar">
-      <div class="logo">LOGO</div>
+      <div class="logo">Billiger Bazare</div>
       <div class="favorites"><i class="las la-bookmark"></i></div>
       <div class="shopping_basket"><i class="las la-shopping-basket"></i></div>
       <div class="menu-toggle" @click="toggleMenu">

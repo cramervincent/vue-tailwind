@@ -6,11 +6,11 @@
    </div>
    <div class="container">
     <ul class="nav-menu">
-        <li class="nav-item"><a href="#" class="nav-link">Lorem, ipsum.</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Lorem, ipsum.</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Lorem, ipsum.</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Lorem, ipsum.</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Lorem, ipsum.</a></li>
+        <li class="nav-item"><i class="las la-heartbeat"></i><a href="#" class="nav-link">Lorem, ipsum.</a></li>
+        <li class="nav-item"><i class="las la-dumbbell"></i><a href="#" class="nav-link">Lorem, ipsum.</a></li>
+        <li class="nav-item"><i class="las la-bath"></i><a href="#" class="nav-link">Lorem, ipsum.</a></li>
+        <li class="nav-item"><i class="las la-restroom"></i><a href="#" class="nav-link">Lorem, ipsum.</a></li>
+        <li class="nav-item"><i class="las la-home"></i><a href="#" class="nav-link">Lorem, ipsum.</a></li>
     </ul>
    </div>
 </template>

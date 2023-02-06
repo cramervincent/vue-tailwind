@@ -8,6 +8,9 @@
   margin: 0;
 }
 
+.carousel, .carousel__slide{
+  z-index: 900!important;
+}
 
 body {
   display: flex;

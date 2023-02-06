@@ -1,0 +1,99 @@
+.product-card {
+  z-index: 900;
+  background-color: $grey-light;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 0;
+  border-radius: $rounded;
+  box-shadow: $shadow-light;
+  margin: 0.5rem;
+  aspect-ratio: 1/1.2;
+  .product-image {
+    position: relative;
+    z-index: 900;
+    .discount-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-color: $secondary;
+      padding: 0.5rem;
+      width: 40%;
+      font-weight: 600;
+      font-size: small;
+      border-radius: 0 0 8px 0;
+    }
+    .product-actions {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0.5rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      span.add-to-cart,
+      span.add-to-favorites {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.35rem;
+        &::after {
+          font-family: $font-awesome;
+          color: $white;
+          font-weight: 900;
+          font-size: 1.5rem;
+        }
+      }
+      .add-to-cart {
+        &::after {
+          content: "\f217";
+        }
+      }
+      .add-to-favorites {
+        &::after {
+          content: "\f02e";
+        }
+      }
+    }
+  }
+  .product-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    font-family: $font-secondary;
+    font-weight: 600;
+  }
+  .product-description {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0.5rem;
+    font-weight: 200;
+    text-align: left;
+    
+  }
+  .product-price {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0.5rem;
+    font-weight: 200;
+    text-align: left;
+    &>span{
+        width: fit-content;
+        margin-right: 1rem;
+    }
+    .from-price{
+        text-decoration: line-through;
+    }
+    .for-price{
+        font-weight: 400;
+        color: $primary;
+    }
+    
+  }
+}
